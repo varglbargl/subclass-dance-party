@@ -10,6 +10,7 @@
     <script src="src/pulseDancer.js"></script>
     <script src="src/danceMonster.js"></script>
     <script src="src/mouseDancer.js"></script>
+    <script src="src/squareDancer.js"></script>
   </head>
   <body>
 
@@ -19,6 +20,7 @@
       <a href="#" class="addDancerButton" data-dancer-maker-function-name="SlideDancer">add a sliding dancer</a>
       <a href="#" class="addDancerButton" data-dancer-maker-function-name="PulseDancer">add a pulsing dancer</a>
       <a href="#" class="addDancerButton" data-dancer-maker-function-name="MouseDancer">add a color changing dancer</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="SquareDancer">add a square dancer</a>
       <a href="#" class="lineUpButton">Everyone line up</a>
     </div>
 
@@ -48,7 +50,7 @@
           var dancer = new dancerMakerFunction(
             $("body").height() * Math.random(),
             $("body").width() * Math.random(),
-            Math.random() * 500 + 500
+            Math.random() * 700 + 300
           );
 
           window.dancers.push(dancer);

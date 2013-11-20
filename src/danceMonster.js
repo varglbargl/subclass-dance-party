@@ -44,20 +44,20 @@ DanceMonster.prototype.step = function(){
       // console.log("removed")
     }
     // console.log(closestTop, ghostTop, closestLeft, ghostLeft);
-    return [closestTop-ghostTop-15, closestLeft-ghostLeft-15];
+    return [closestTop-15, closestLeft-15];
   };
 
-  this.$node.css({ "border": "0 solid #FFF" });
+  this.$node.css({ "border": "0 solid #FFF", width: 0, height: 0 });
   var chase = function(){
     var hunted = hunt();
     that.$node.animate({
-      top: "+=" + hunted[0],
-      left: "+=" + hunted[1]
+      top: hunted[0],
+      left: hunted[1]
     }, that.timeBetweenSteps/2);
   };
   chase();
 };
 
 DanceMonster.prototype.lineup = function() {
-  this.timeBetweenSteps /= 1.2;
+  this.timeBetweenSteps *= 0.5;
 }

@@ -40,6 +40,6 @@ PulseDancer.prototype.step = function(){
 PulseDancer.prototype.lineup = function() {
   this.$node.stop(true,false);
   this.$node.animate({
-    top: 30
+    left: 30
   }, 500);
 }

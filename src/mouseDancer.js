@@ -13,7 +13,7 @@ MouseDancer.prototype.constructor = MouseDancer;
 MouseDancer.prototype.step = function(){
   // debugger;
   var that = this;
-  var colors = ["blue", "yellow", "green", "white", "purple", "black"];
+  var colors = ["#0BF", "#FF6", "#8F0", "#F06", "#93F"];
   // call the old versionof step at the beginning of any call to this new version of step
   Dancer.prototype.step.call(this);
 

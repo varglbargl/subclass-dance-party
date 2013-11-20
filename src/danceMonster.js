@@ -57,7 +57,3 @@ DanceMonster.prototype.step = function(){
   };
   chase();
 };
-
-DanceMonster.prototype.lineup = function() {
-  this.timeBetweenSteps *= 0.5;
-}
